@@ -1,4 +1,16 @@
 // Constants for date calculations
+// Check authentication at the beginning
+function checkAuth() {
+  const isLoggedIn = localStorage.getItem('bangCRM_loggedIn') || sessionStorage.getItem('bangCRM_loggedIn');
+  if (isLoggedIn !== 'true') {
+    // Redirect to login page if not authenticated
+    window.location.href = 'login.html';
+    return false;
+  }
+  return true;
+}
+
+// Constants
 const TODAY = new Date();
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 const FOURTEEN_DAYS_MS = 14 * 24 * 60 * 60 * 1000;
@@ -475,4 +487,9 @@ function initDashboard() {
 }
 
 // Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', initDashboard);
+document.addEventListener('DOMContentLoaded', () => {
+  // Check authentication first
+  if (checkAuth()) {
+    initDashboard();
+  }
+});
