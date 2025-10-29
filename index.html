@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bang! CRM Command Center</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>BANG!</h1>
+      <p>CRM Command Center</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Top Summary Cards -->
+    <section id="summary-cards">
+      <div class="card total" data-filter="all">
+        <h3><span class="icon"></span> Total Members</h3>
+        <p class="count" id="total-count">0</p>
+      </div>
+      <div class="card active" data-filter="active">
+        <h3><span class="icon"></span> Active</h3>
+        <p class="count" id="active-count">0</p>
+      </div>
+      <div class="card expiring" data-filter="expiring">
+        <h3><span class="icon"></span> Expiring Soon</h3>
+        <p class="count" id="expiring-count">0</p>
+      </div>
+      <div class="card expired" data-filter="expired">
+        <h3><span class="icon"></span> Expired</h3>
+        <p class="count" id="expired-count">0</p>
+      </div>
+      <div class="card dormant" data-filter="dormant">
+        <h3><span class="icon"></span> Dormant</h3>
+        <p class="count" id="dormant-count">0</p>
+      </div>
+    </section>
+
+    <!-- Churn Watch Table -->
+    <section id="churn-watch">
+      <h2>Members Going Silent</h2>
+      <div class="toggle-container">
+        <span class="toggle-label">Filter</span>
+      </div>
+      <div class="table-container">
+        <table id="churn-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Expiry</th>
+              <th>Last Visit</th>
+              <th>Days Since Visit</th>
+              <th>Plan</th>
+              <th>Next Step</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="churn-table-body">
+            <!-- Table rows will be populated by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="flex-container">
+      <!-- Renewal Pipeline Chart -->
+      <section id="renewal-pipeline">
+        <h2>Upcoming Renewal Waves</h2>
+        <div class="chart-container">
+          <canvas id="renewal-chart"></canvas>
+        </div>
+      </section>
+
+      <!-- Revenue Snapshot -->
+      <section id="revenue-snapshot">
+        <h2>Today's Earning Pulse</h2>
+        <div class="revenue-container">
+          <div class="revenue-chart-container">
+            <div class="loading-placeholder">Data is loading...</div>
+            <canvas id="revenue-chart"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Member Story Layer -->
+    <div class="flex-container">
+      <!-- Loyal Members Section -->
+      <section id="loyal-members">
+        <h2>Top Loyal Members</h2>
+        <div class="loading-placeholder">Data is loading...</div>
+        <ul class="loyal-list" id="loyal-members-list">
+          <!-- Will be populated by JavaScript -->
+        </ul>
+      </section>
+
+      <!-- Best Plan Section -->
+      <section id="best-plan">
+        <h2>Best Performing Plan</h2>
+        <div class="loading-placeholder">Data is loading...</div>
+      </section>
+    </div>
+
+    <!-- WhatsApp-ready List Download -->
+    <section id="whatsapp-export">
+      <h2>Quick Win Lists</h2>
+      
+      <div class="export-options">
+        <div class="export-card">
+          <h3>Expired Members</h3>
+          <button id="export-expired">Export List</button>
+        </div>
+        <div class="export-card">
+          <h3>Dormant Members</h3>
+          <button id="export-dormant">Export List</button>
+        </div>
+        <div class="export-card">
+          <h3>Expiring Soon</h3>
+          <button id="export-expiring">Export List</button>
+        </div>
+        <div class="export-card">
+          <h3>All Members</h3>
+          <button id="export-all">Export List</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
