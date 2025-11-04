@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rezerv Report Storage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="rezerv.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <!-- Header and actions -->
+      <header class="card-header">
+        <h1>Rezerv Report Storage</h1>
+        <p class="subtext">All reports successfully downloaded from Rezerv and kept for Bang! Studios.</p>
+        <div class="action-bar">
+          <button id="download-btn" class="download-btn" type="button">Download Reports</button>
+        </div>
+      </header>
+      <div class="divider"></div>
+      <section class="progress-section">
+        <div class="progress" aria-label="Download progress">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div id="progress-text" class="progress-text">0% completed</div>
+      </section>
+
+      <section class="list">
+        <h2 class="list-title">Available CSV Files</h2>
+        <ul id="report-list" class="report-list" aria-live="polite">
+          <!-- Populated by rezerv.js -->
+        </ul>
+      </section>
+
+      <footer class="card-footer">
+        <p class="footer-text">Data Source: Rezerv. Managed by Bang! Studios.</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="rezerv.js"></script>
+</body>
+</html>

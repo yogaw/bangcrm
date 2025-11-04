@@ -1,0 +1,188 @@
+/* Rezerv Report Storage — Light, clean, minimal */
+:root {
+  --bg: #F9FAFB;           /* gray-50 */
+  --card: #FFFFFF;
+  --text: #1F2937;         /* main */
+  --text-secondary: #6B7280;
+  --success: #16A34A;      /* green-600 */
+  --divider: #E5E7EB;
+  --radius: 12px;
+  --shadow: 0 10px 24px rgba(31, 41, 55, 0.08);
+  --spacing: 20px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 720px;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: clamp(20px, 4vw, 32px);
+}
+
+.card-header h1 {
+  margin: 0 0 8px;
+  font-size: clamp(22px, 3.6vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.subtext {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: clamp(14px, 2.6vw, 16px);
+  line-height: 1.6;
+}
+
+.divider {
+  height: 1px;
+  background: var(--divider);
+  margin: 18px 0 16px;
+}
+
+.list-title {
+  margin: 0 0 10px;
+  font-size: clamp(16px, 2.8vw, 18px);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.report-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.report-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--divider);
+}
+
+.report-item:last-child {
+  border-bottom: none;
+}
+
+.file-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: #F3F4F6;
+  display: grid;
+  place-items: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.file-name {
+  font-weight: 500;
+  color: var(--text);
+  font-size: 15px;
+}
+
+/* Action bar and button */
+.action-bar {
+  margin-top: 14px;
+}
+
+.download-btn {
+  appearance: none;
+  border: none;
+  border-radius: 8px;
+  background: var(--success);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 14px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(22, 163, 74, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.download-btn[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.download-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(22, 163, 74, 0.3);
+}
+
+/* Progress */
+.progress-section { 
+  margin: 14px 0 6px; 
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--divider);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--success);
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+/* Status variants */
+.status--available {
+  background: #F3F4F6;      /* gray-100 */
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.status--downloading {
+  background: #FEF3C7;      /* amber-100 */
+  color: #B45309;           /* amber-700 */
+  font-weight: 600;
+}
+
+.status--downloaded {
+  background: #DCFCE7;      /* green-100 */
+  color: var(--success);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .report-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
