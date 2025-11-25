@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Fetch Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-box {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .test-button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+        }
+        .error {
+            border-left-color: #dc3545;
+            color: #dc3545;
+        }
+        .success {
+            border-left-color: #28a745;
+            color: #28a745;
+        }
+        .log {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Fetch Test</h1>
+    <p>This test will help diagnose fetch issues with the CSV file.</p>
+
+    <div class="test-box">
+        <h3>Test 1: Basic File Existence Check</h3>
+        <button class="test-button" onclick="testBasicFetch()">Test Basic Fetch</button>
+        <div id="basicResult"></div>
+    </div>
+
+    <div class="test-box">
+        <h3>Test 2: Check File Headers</h3>
+        <button class="test-button" onclick="testHeaders()">Test Headers</button>
+        <div id="headersResult"></div>
+    </div>
+
+    <div class="test-box">
+        <h3>Test 3: Alternative Path</h3>
+        <button class="test-button" onclick="testAlternativePath()">Test ./simplified_customer_profiles.csv</button>
+        <div id="alternativeResult"></div>
+    </div>
+
+    <div class="test-box">
+        <h3>Test 4: Full Path</h3>
+        <button class="test-button" onclick="testFullPath()">Test /Users/yoga.wigardo/Workspaces/bangCRM/simplified_customer_profiles.csv</button>
+        <div id="fullPathResult"></div>
+    </div>
+
+    <div class="test-box">
+        <h3>Test 5: Manual Data Display</h3>
+        <button class="test-button" onclick="testManualData()">Test Manual Data</button>
+        <div id="manualDataResult"></div>
+    </div>
+
+    <h3>Console Log:</h3>
+    <div id="consoleLog" class="log"></div>
+
+    <script>
+        // Log function
+        function log(message) {
+            console.log(message);
+            const logDiv = document.getElementById('consoleLog');
+            const timestamp = new Date().toLocaleTimeString();
+            logDiv.innerHTML += `[${timestamp}] ${message}\n`;
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        // Clear log on page load
+        window.addEventListener('load', function() {
+            document.getElementById('consoleLog').innerHTML = 'Console output will appear here...\n';
+            log('Page loaded - Ready for testing');
+        });
+
+        // Test 1: Basic fetch
+        async function testBasicFetch() {
+            const resultDiv = document.getElementById('basicResult');
+            resultDiv.innerHTML = '<div class="result">Testing fetch of simplified_customer_profiles.csv...</div>';
+
+            try {
+                log('Starting fetch test');
+                const response = await fetch('simplified_customer_profiles.csv');
+                log('Fetch response received');
+
+                if (!response.ok) {
+                    log(`❌ HTTP Error: ${response.status} ${response.statusText}`);
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                log('✅ Response OK');
+                const contentType = response.headers.get('content-type');
+                log(`Content-Type: ${contentType}`);
+
+                const text = await response.text();
+                log(`Response text length: ${text.length} characters`);
+                log(`First line: ${text.split('\n')[0]}`);
+
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <strong>✅ Basic Fetch Success!</strong><br>
+                        Status: ${response.status} ${response.statusText}<br>
+                        Content-Type: ${contentType || 'Not specified'}<br>
+                        Size: ${text.length} characters<br>
+                        Lines: ${text.split('\n').length}
+                    </div>
+                `;
+
+            } catch (error) {
+                log(`❌ Basic Fetch Error: ${error.message}`);
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <strong>❌ Basic Fetch Failed:</strong><br>
+                        ${error.message}<br>
+                        <small>Check console for more details</small>
+                    </div>
+                `;
+            }
+        }
+
+        // Test 2: Headers
+        async function testHeaders() {
+            const resultDiv = document.getElementById('headersResult');
+            resultDiv.innerHTML = '<div class="result">Testing headers...</div>';
+
+            try {
+                log('Testing HEAD request');
+                const response = await fetch('simplified_customer_profiles.csv', {
+                    method: 'HEAD'
+                });
+                log('HEAD response received');
+
+                if (!response.ok) {
+                    log(`❌ HEAD Error: ${response.status} ${response.statusText}`);
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                log('✅ HEAD OK');
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <strong>✅ Headers Test Success!</strong><br>
+                        File exists and is accessible<br>
+                        Status: ${response.status} ${response.statusText}<br>
+                        Content-Length: ${response.headers.get('content-length') || 'Not specified'}
+                    </div>
+                `;
+
+            } catch (error) {
+                log(`❌ Headers Error: ${error.message}`);
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <strong>❌ Headers Test Failed:</strong><br>
+                        ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        // Test 3: Alternative path
+        async function testAlternativePath() {
+            const resultDiv = document.getElementById('alternativeResult');
+            resultDiv.innerHTML = '<div class="result">Testing ./simplified_customer_profiles.csv...</div>';
+
+            try {
+                log('Testing alternative path');
+                const response = await fetch('./simplified_customer_profiles.csv');
+                log('Alternative path response received');
+
+                if (!response.ok) {
+                    log(`❌ Alternative Path Error: ${response.status} ${response.statusText}`);
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                log('✅ Alternative Path OK');
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <strong>✅ Alternative Path Success!</strong><br>
+                        Path: ./simplified_customer_profiles.csv<br>
+                        Status: ${response.status} ${response.statusText}
+                    </div>
+                `;
+
+            } catch (error) {
+                log(`❌ Alternative Path Error: ${error.message}`);
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <strong>❌ Alternative Path Failed:</strong><br>
+                        ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        // Test 4: Full path
+        async function testFullPath() {
+            const resultDiv = document.getElementById('fullPathResult');
+            resultDiv.innerHTML = '<div class="result">Testing full path...</div>';
+
+            try {
+                log('Testing full path');
+                const response = await fetch('/Users/yoga.wigardo/Workspaces/bangCRM/simplified_customer_profiles.csv');
+                log('Full path response received');
+
+                if (!response.ok) {
+                    log(`❌ Full Path Error: ${response.status} ${response.statusText}`);
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                log('✅ Full Path OK');
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <strong>✅ Full Path Success!</strong><br>
+                        Status: ${response.status} ${response.statusText}
+                    </div>
+                `;
+
+            } catch (error) {
+                log(`❌ Full Path Error: ${error.message}`);
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <strong>❌ Full Path Failed:</strong><br>
+                        ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        // Test 5: Manual data
+        function testManualData() {
+            const resultDiv = document.getElementById('manualDataResult');
+
+            // Manual CSV data for testing
+            const csvData = `CustomerName,MobileCode,Mobile,Email,DateOfBirth,JoinedDate,Completed,Cancelled,Date joined,Days since last class,Days since package purchase,Days since membership purchase,Profile Total Spent,Profile Total Attended,Average Revenue
+Tri Wulandari,62.0,811709799.0,wulandari1995.tw@gmail.com,,04/11/24 10:22,75,25,,,,,17947750.0,75,239303.33
+Jonathan Edward,62.0,87878461661.0,jonathanedwardtobing98@gmail.com,12 Nov 1998,08/09/24 09:26,2,1,08 Sep 2024,380.0,258.0,,515000.0,2,257500.0`;
+
+            log('Testing with manual data');
+            log(`Manual data length: ${csvData.length} characters`);
+
+            try {
+                const blob = new Blob([csvData], { type: 'text/csv;charset=utf-8;' });
+                const url = URL.createObjectURL(blob);
+
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'test_manual_data.csv';
+                link.style.visibility = 'hidden';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+
+                log('✅ Manual download completed');
+
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <strong>✅ Manual Data Test Success!</strong><br>
+                        Used hardcoded CSV data<br>
+                        Downloaded: test_manual_data.csv
+                    </div>
+                `;
+
+            } catch (error) {
+                log(`❌ Manual Data Error: ${error.message}`);
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <strong>❌ Manual Data Failed:</strong><br>
+                        ${error.message}
+                    </div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>

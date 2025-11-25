@@ -1,0 +1,109 @@
+CustomerName,MobileCode,Mobile,Email,DateOfBirth,Gender,AddressLine1,AddressLine2,City,State,PostalCode,Country,Group,Tag,Membership,JoinedDate,Channel,Status,Completed,Booked,No Show,Cancelled,Late Cancelled,Waitlist Cancelled,Waitlist Expired,Total Booking,Date joined,Days since first joined,Days since last class,Days since last appointment,Days since outlet access,Days since package purchase,Days since membership purchase,Days since drop in purchase,Days since course purchase,Days since member,Days since non member,Days since lost member,Total class completed,Total appointment completed,Total outlet access completed,Total courses completed,Total spending amount
+kyle fletcher,62.0,812162920929.0,,,,,,,,,,,,Active Member,28/12/24 10:32,BusinessPortal,Active,0,0,0,0,0,0,0,0,19 Oct 2024,402.0,402.0,,,402.0,,,,,,402.0,,,,,0.0
+nadja nadja,62.0,82230245537.0,,,,,,,,,,,,Active Member,29/11/24 17:28,BusinessPortal,Active,0,0,0,0,0,0,0,0,19 Oct 2024,402.0,402.0,,,402.0,,,,,,402.0,,,,,0.0
+irene tjahyadi,62.0,87888888178.0,,,,,,,,,,,,Active Member,12/11/24 13:52,BusinessPortal,Active,2,0,0,0,0,0,0,2,19 Oct 2024,402.0,402.0,,,402.0,,,,,,402.0,,,,,0.0
+Syam Syam,62.0,82123911199.0,,,,,,,,,,,,Active Member,25/10/24 07:18,BusinessPortal,Active,1,0,0,1,0,0,0,2,19 Oct 2024,402.0,402.0,,,402.0,,,,,,402.0,,,,,0.0
+Mely Hon,62.0,8170040906.0,tjhinaynie@gmail.com,06 Nov 1978,Female,,,,,,,,Size 39,Active Member,15/10/24 18:02,Web,Active,243,13,4,267,37,0,0,564,15 Oct 2024,406.0,,,,214.0,27.0,406.0,,406.0,,,55.0,,,,5562000.0
+Michelle Alim,62.0,811300888.0,Michelle.alim@gmail.com,27 Nov 1987,Female,Simprug garden 3 blok b no 4-6,,,,,ID,,Size 39,Active Member,10/10/24 19:45,BusinessPortal,Active,60,0,4,3,0,0,0,67,10 Oct 2024,411.0,10.0,,,55.0,,,,411.0,,,12.0,,,,1586200.0
+Livia Kurniawan,62.0,81222787887.0,Liviakurniawan83@gmail.com,,Female,,,,,,,,Size 39,Active Member,10/10/24 19:42,BusinessPortal,Active,70,0,6,3,0,0,0,79,10 Oct 2024,411.0,3.0,,,15.0,,,,411.0,,,20.0,,,,2369000.0
+BANG! GROUP BOOKING,62.0,,bangstudiosclasspass@gmail.com,07 Oct 2000,Male,,,,,,,,,Active Member,08/10/24 03:21,Web,Active,1,113,15,332,0,0,0,461,07 Oct 2024,414.0,150.0,,,35.0,,,,414.0,,,,,,,0.0
+ Andrea Stefanny,62.0,8118900029.0,andrea.stefanny@gmail.com,15 Aug 2019,,,,,,,,,Size 38,Active Member,11/09/24 14:24,Web,Active,89,0,0,24,0,0,0,113,11 Sep 2024,440.0,4.0,,,25.0,,301.0,,440.0,,,19.0,,,,2626500.0
+Jonathan Edward,62.0,87878461661.0,jonathanedwardtobing98@gmail.com,12 Nov 1998,Male,,,,,,,,,Active Member,08/09/24 09:26,Web,Active,2,0,0,1,0,0,1,4,08 Sep 2024,443.0,380.0,,,258.0,,,,443.0,,,,,,,0.0
+Clairine Runtung,62.0,8111576901.0,runtung.clairine@gmail.com,31 Aug 2024,,,,,,,,,,Active Member,31/08/24 15:32,Web,Active,6,0,0,1,0,0,0,7,31 Aug 2024,451.0,3.0,,,59.0,,,,451.0,,,4.0,,,,1086650.0
+Angelique Widjaja,0.0,,angeliquetirtaa@yahoo.com,05 Dec 2001,Female,,,,,,,,,Active Member,29/08/24 13:55,Web,Active,1,0,0,1,0,0,0,2,29 Aug 2024,453.0,451.0,,,54.0,,,,453.0,,,,,,,257500.0
+Chor Peng Tan,62.0,8118717731.0,tan.cp66@gmail.com,18 Jun 1966,Male,,,,,,,,Size 42,Active Member,27/08/24 08:59,Web,Active,92,0,2,23,0,0,0,117,27 Aug 2024,455.0,2.0,,,12.0,,,,455.0,,,6.0,,,,309000.0
+Ivana Tjandra,62.0,,tj.ivanam@gmail.com,02 May 1992,Female,,,,,,,,,Active Member,26/08/24 09:45,Web,Active,57,0,5,56,4,0,0,122,26 Aug 2024,456.0,2.0,,,18.0,,,,456.0,,,10.0,,,,618000.0
+Eunike Joso,65.0,94777083.0,eunikejoso18@gmail.com,,,,,,,,,,,Active Member,24/08/24 10:16,BusinessPortal,Active,7,0,10,4,0,0,0,21,24 Aug 2024,458.0,91.0,,,53.0,,,,458.0,,,,,,,2266000.0
+Gianti Probosutedjo,62.0,818168900.0,giantiprobo98@gmail.com,03 Aug 1998,Female,,,,,,,,,Active Member,22/08/24 22:09,Web,Active,9,0,0,12,0,0,0,21,22 Aug 2024,460.0,245.0,,,221.0,,,,460.0,,,,,,,0.0
+Denita Putri,62.0,818499118.0,denitakaliangga@gmail.com,12 Nov 1989,Female,,,,,,,,Size 40,Active Member,22/08/24 15:28,Web,Active,53,0,1,51,0,0,0,105,22 Aug 2024,460.0,106.0,,,110.0,,,,460.0,,,,,,,0.0
+Lingkan S,62.0,81287561090.0,lsngantung@gmail.com,16 Nov 1985,,,,,,,,,,Active Member,20/08/24 14:58,App,Active,11,0,0,1,0,0,0,12,20 Aug 2024,462.0,10.0,,,290.0,,,,462.0,,,1.0,,,,0.0
+Helena S,62.0,8119187117.0,helenafelicea@yahoo.com,,,,,,,,,,Size 38,Active Member,20/08/24 14:52,Web,Active,174,0,16,137,2,0,0,329,20 Aug 2024,462.0,4.0,,,87.0,28.0,360.0,,462.0,,,38.0,,,,5562000.0
+Amanda Medina,62.0,81290911901.0,amanda.medina96@gmail.com,,,,,,,,,,,Active Member,17/08/24 09:04,Web,Active,0,0,0,4,0,0,0,4,17 Aug 2024,465.0,,,,61.0,,,,465.0,,,,,,,257500.0
+sasha Halim,62.0,81283736288.0,sasha15_02@yahoo.com,15 Feb 1988,Female,,,,,,,,,Active Member,15/08/24 23:31,Web,Active,6,0,0,1,0,0,0,7,15 Aug 2024,467.0,231.0,,,232.0,,,,467.0,,,,,,,0.0
+Priscilla M,62.0,81314088575.0,prisil.manurung@gmail.com,17 Mar 1990,Female,,,,,,,,Size 38,Active Member,15/08/24 17:54,Web,Active,16,0,0,6,0,0,0,22,15 Aug 2024,467.0,10.0,,,19.0,,,,467.0,,,7.0,,,,1756150.0
+Firdha Shafira,62.0,81928800401.0,firdhashafira@gmail.com,04 Jan 1997,Female,,,,,,ID,,Size 40,Active Member,15/08/24 13:30,Web,Active,59,0,2,14,1,0,0,76,15 Aug 2024,467.0,2.0,,,5.0,,,,467.0,,,13.0,,,,1751000.0
+Dewi Tjakrawati,62.0,811811462.0,catherinenathalia1@gmail.com,11 Oct 2003,Male,,,,,,,,,Active Member,14/08/24 17:22,Web,Active,10,0,1,2,0,0,0,13,14 Aug 2024,468.0,51.0,,,6.0,,,,468.0,,,2.0,,,,1957000.0
+Maureen T,62.0,,mtarunadjaja@gmail.com,10 Aug 1985,Female,,,,,,,,Size 39,Active Member,13/08/24 16:45,Web,Active,175,12,1,134,1,0,1,324,13 Aug 2024,469.0,1.0,,,18.0,26.0,360.0,,469.0,,,48.0,,,,6128500.0
+Eno Sutarjadi,62.0,81319137406.0,edrieno.s@gmail.com,02 Sep 1993,Male,,,,,,,,Size 42,Active Member,13/08/24 13:23,Web,Active,233,9,6,82,3,0,0,333,13 Aug 2024,469.0,,,,13.0,19.0,,,469.0,,,52.0,,,,5871000.0
+Berta Hardiman,62.0,85186895505.0,bertahardiman@gmail.com,29 May 1994,Female,,,,,,,,,Active Member,13/08/24 11:59,Web,Active,3,0,0,4,0,0,0,7,13 Aug 2024,469.0,394.0,,,290.0,,,,469.0,,,,,,,0.0
+Vindy Donals,62.0,8111200050.0,Vindyrikylaa@gmail.com,04 Feb 1999,,,,,,,,,,Active Member,13/08/24 08:44,Web,Active,5,0,2,3,0,0,0,10,13 Aug 2024,469.0,32.0,,,25.0,,,,469.0,,,1.0,,,,257500.0
+Rifaldi Hardiansyah,62.0,81294781994.0,rif.hardiansyah@gmail.com,24 Oct 1994,Male,,,,,,,,Size 43,Active Member,12/08/24 20:48,Web,Active,35,0,1,15,1,0,0,52,12 Aug 2024,470.0,49.0,,,78.0,,360.0,,470.0,,,3.0,,,,463500.0
+Arlene Tjahja,62.0,818785005.0,jemima.tjahja@gmail.com,12 Aug 2024,Female,,,,,,,,Size 41,Active Member,12/08/24 18:38,Web,Active,145,3,25,169,7,0,0,349,12 Aug 2024,470.0,,,,17.0,260.0,,,470.0,,,32.0,,,,6025500.0
+Nabila Rudiono,62.0,,nabila.rudiono@gmail.com,21 Jul 1996,Female,,,,,,,,Size 36,Active Member,12/08/24 14:32,Web,Active,60,0,0,11,4,0,0,75,12 Aug 2024,470.0,59.0,,,60.0,,397.0,,470.0,,,5.0,,,,1586200.0
+Dian Kristiani,62.0,81319072331.0,diansamosirp@gmail.com,08 Oct 1993,Female,,,,,,,,Size 37,Active Member,12/08/24 10:04,Web,Active,129,2,1,33,3,1,1,170,12 Aug 2024,470.0,3.0,,,17.0,,302.0,,470.0,,,15.0,,,,3337200.0
+Rere-Regina Windyasti,,8111528122.0,Regina.windyasti@gmail.com,,Female,,,,,,,,Size 39,Active Member,12/08/24 00:38,Web,Active,59,0,6,38,2,0,0,105,11 Aug 2024,471.0,10.0,,,54.0,,,,471.0,,,8.0,,,,2266000.0
+Xavier Chang,62.0,819861616.0,reivax1628@gmail.com,,,,,,,,,,,Active Member,11/08/24 18:05,Web,Active,39,0,5,7,0,0,0,51,11 Aug 2024,471.0,56.0,,,237.0,,,,471.0,,,2.0,,,,0.0
+Graceila Putri,62.0,8212323886836.0,pgraceila3@gmail.com,04 Oct 1994,Female,,,,,,,,Size 43,Active Member,11/08/24 13:54,Web,Active,45,0,0,58,0,0,0,103,11 Aug 2024,471.0,3.0,,,57.0,,303.0,,471.0,,,8.0,,,,7107000.0
+Hanna Thjin,62.0,81314363333.0,hannatjhin@gmail.com,03 Nov 1988,Female,,,,,,,,Size 39,Active Member,11/08/24 09:59,Web,Active,97,1,0,106,0,2,0,206,11 Aug 2024,471.0,,,,,,360.0,,471.0,,,7.0,,,,2111500.0
+Michelle Mahadi,62.0,81314765765.0,mkmahadi@gmail.com,21 Mar 1993,Female,,,,,,,,,Active Member,10/08/24 14:34,Web,Active,155,11,4,154,1,0,0,325,10 Aug 2024,472.0,2.0,,,17.0,,360.0,,472.0,,,29.0,,,,10609000.0
+ Nabila Audri,62.0,8117578867.0,nabila.audri@gmail.com,05 Feb 1998,,,,,,,,,Size 38,Active Member,09/08/24 12:55,App,Active,65,0,24,16,2,0,1,108,09 Aug 2024,473.0,7.0,,,7.0,,297.0,,473.0,,,12.0,,,,206000.0
+Yuki Sutama,62.0,81311347420.0,yukisutama@gmail.com,31 Mar 1977,Female,,,,,,ID,,Size 40,Active Member,07/08/24 21:58,Web,Active,105,2,16,30,3,0,0,156,07 Aug 2024,475.0,,,,22.0,26.0,360.0,,475.0,,,31.0,,,,5562000.0
+Jessica Andyanto,62.0,8111920204.0,jessicaandyanto@gmail.com,,,,,,,,,,Size 41,Active Member,07/08/24 18:03,Web,Active,42,4,0,20,0,0,0,66,07 Aug 2024,475.0,,,,,,,,475.0,,,11.0,,,,927000.0
+ Clara Kusno,62.0,82211569678.0,clara.a.kusno@gmail.com,14 Dec 1994,,,,,,,,,,Active Member,07/08/24 16:35,Web,Active,6,0,0,3,0,0,0,9,07 Aug 2024,475.0,,,,,,,,475.0,,,3.0,,,,0.0
+Harizka Rizal,62.0,81212308108.0,harizka31rizal@gmail.com,31 Jul 1999,Male,Jl. Pondok Jaya V No. 8B,,Jakarta,DKI Jakarta,12720.0,ID,,,Active Member,07/08/24 14:19,Web,Active,104,0,25,20,2,0,0,151,07 Aug 2024,475.0,2.0,,,3.0,,382.0,,475.0,,,17.0,,,,721000.0
+Janefer Soelaiman,62.0,8159992200.0,sjanefer@yahoo.com,,,,,,,,,,,Active Member,07/08/24 08:29,Web,Active,5,0,1,6,0,0,0,12,07 Aug 2024,475.0,384.0,,,161.0,,,,475.0,,,,,,,0.0
+Fia Fazkya,0.0,,fazkyazalicka@gmail.com,01 Aug 1997,Female,,,,,,,,,Active Member,06/08/24 23:30,Web,Active,2,0,2,2,0,0,0,6,06 Aug 2024,476.0,330.0,,,115.0,,,,476.0,,,,,,,0.0
+Lucky Suryadi,62.0,87886678158.0,Luckysuryadi@gmail.com,16 Nov 1989,,,,,,,,,Size 44,Active Member,06/08/24 23:07,Web,Active,62,0,1,7,0,0,0,70,06 Aug 2024,476.0,27.0,,,42.0,,301.0,,476.0,,,7.0,,,,1905500.0
+ Charina Septyandari,44.0,7904905651.0,charinaseptyandari@yahoo.com,23 Sep 1991,,,,,,,,,Size 38,Active Member,06/08/24 19:47,Web,Active,40,0,4,14,1,0,0,59,06 Aug 2024,476.0,45.0,,,59.0,,,,476.0,,,3.0,,,,1586200.0
+ Chamonique Garnita,62.0,81318889998.0,chamoniquegarnita@gmail.com,23 May 1996,,,,,,,,,,Active Member,06/08/24 18:18,Web,Active,27,0,1,10,0,0,0,38,06 Aug 2024,476.0,59.0,,,84.0,,389.0,,476.0,,,4.0,,,,0.0
+Glory Isabella,62.0,,gloryisabellaa@gmail.com,08 May 1998,Female,,,,,,,,,Active Member,06/08/24 14:25,Web,Active,53,0,1,7,3,0,0,64,06 Aug 2024,476.0,12.0,,,15.0,,358.0,,476.0,,,11.0,,,,0.0
+Amanda miranty,62.0,8159082683.0,amanda_miranty@yahoo.com,,,,,,,,,,Size 39,Active Member,06/08/24 11:00,Web,Active,53,0,3,37,1,0,0,94,06 Aug 2024,476.0,6.0,,,57.0,,,,476.0,,,7.0,,,,2987000.0
+Anastazia Adeela,62.0,81807880880.0,anna.tazia@gmail.com,12 Feb 1997,Female,,,,,,,,Size 40,Active Member,05/08/24 19:48,Web,Active,166,1,5,136,7,2,1,318,05 Aug 2024,477.0,1.0,,,8.0,,397.0,,477.0,,,28.0,,,,6334500.0
+Shanna Ramadhanti,62.0,81297485962.0,shannaonlinejunk@gmail.com,,Female,,,,,,,,Size 38,Active Member,05/08/24 17:54,Web,Active,124,0,4,83,3,0,0,214,05 Aug 2024,477.0,12.0,,,22.0,16.0,,,477.0,,,26.0,,,,5871000.0
+Sonia Effendy,62.0,82256893737.0,Soniaeffendy@gmail.com,18 Feb 2000,Female,,,,,,,,Size 37,Active Member,05/08/24 17:42,Web,Active,39,1,10,43,0,0,0,93,05 Aug 2024,477.0,3.0,,,3.0,,,,477.0,,,4.0,,,,463500.0
+Hanna anjani Djajaatmadja,62.0,811911808.0,hanna.djajaatmadja@gmail.com,24 Dec 2018,Female,,,,,,,,,Active Member,05/08/24 17:40,Web,Active,2,0,3,4,0,0,1,10,05 Aug 2024,477.0,432.0,,,22.0,,,,477.0,,,,,,,0.0
+Fikha Ekha,62.0,8170706070.0,fikha28@gmail.com,28 Sep 1985,Female,,,JakartaSelatan,DKIJakarta,,,,,Active Member,04/08/24 18:55,Web,Active,59,0,3,5,1,0,1,69,04 Aug 2024,478.0,6.0,,,377.0,,,,478.0,,,8.0,,,,0.0
+Alexa Franka,62.0,8557869986.0,alexa.franka@gmail.com,14 Oct 2003,Female,,,,,,,,Size 40,Active Member,03/08/24 08:00,BusinessPortal,Active,44,1,1,3,0,0,0,49,03 Aug 2024,479.0,3.0,,,80.0,,,,479.0,,,12.0,,,,1802500.0
+renitta rusman,0.0,,renitta.rusman@gmail.com,12 Dec 1977,Female,,,,,,,,,Active Member,03/08/24 05:54,Web,Active,5,0,0,2,2,0,0,9,02 Aug 2024,480.0,345.0,,,126.0,,,,480.0,,,,,,,0.0
+ Caroline Muliawan,62.0,81281882999.0,carolinemuliawan@gmail.com,16 May 1991,,,,,,,,,,Active Member,02/08/24 20:36,Web,Active,35,0,8,3,0,0,0,46,02 Aug 2024,480.0,,,,35.0,,,,480.0,,,13.0,,,,2626500.0
+Winny Arindrani,62.0,81212067728.0,windyaswari@gmail.com,17 Dec 1988,Female,,,,,,,,,Active Member,02/08/24 18:15,Web,Active,4,0,0,1,0,0,0,5,02 Aug 2024,480.0,80.0,,,77.0,,,,480.0,,,1.0,,,,515000.0
+guntur mallarangeng,62.0,8111888764.0,gunturmallarangeng@gmail.com,14 Feb 1993,Male,,,,,,,,,Active Member,02/08/24 16:19,Web,Active,76,0,14,10,3,0,0,103,02 Aug 2024,480.0,59.0,,,77.0,,407.0,,480.0,,,4.0,,,,2111500.0
+Zhara Mauritzka Syafrizal,62.0,87875098280.0,zharamauritzka5@gmail.com,05 Jun 2001,Female,,,,,,ID,,Size 41,Active Member,01/08/24 08:25,Web,Active,138,0,4,17,1,1,0,162,01 Aug 2024,481.0,15.0,,,19.0,279.0,349.0,,481.0,,,16.0,,,,3708000.0
+Ruth Ivannie,62.0,81291287632.0,ruthivanniers@gmail.com,,,,,,,,,,Size 40,Active Member,31/07/24 15:04,Web,Active,102,0,2,25,4,0,1,136,31 Jul 2024,482.0,16.0,,,61.0,,302.0,,482.0,,,11.0,,,,206000.0
+yuyu P,62.0,81280750798.0,ycrosetti31@gmail.com,01 Jun 1980,,,,,,,,,,Active Member,30/07/24 23:39,Web,Active,61,0,3,1,0,0,0,65,30 Jul 2024,483.0,,,,,314.0,360.0,,483.0,,,14.0,,,,3708000.0
+Jasvin Seera,60.0,123600753.0,jasvinseera@gmail.com,,Female,,,,,,,,,Active Member,30/07/24 21:50,Web,Active,1,0,0,0,0,0,0,1,30 Jul 2024,483.0,472.0,,,298.0,,,,483.0,,,,,,,0.0
+Adji Yunishar,62.0,8111252244.0,adjiyunishar@gmail.com,24 Jan 1995,Male,,,,,,,,,Active Member,30/07/24 16:15,Web,Active,96,0,17,9,3,0,0,125,30 Jul 2024,483.0,9.0,,,78.0,,301.0,,483.0,,,6.0,,,,257500.0
+nameera dresanala,62.0,8111431505.0,n.dresanala@gmail.com,15 May 1996,Female,,,,,,,,"Size 43,SEPATU SOULCYCLE",Active Member,30/07/24 16:10,Web,Active,131,1,5,98,1,0,0,236,30 Jul 2024,483.0,2.0,,,3.0,,304.0,,483.0,,,22.0,,,,1699500.0
+Fauzan Fikri,62.0,87806709071.0,fauzanfikri0305@gmail.com,,,,,,,,,,Size 44,Active Member,30/07/24 15:31,Web,Active,195,0,16,46,5,1,0,263,30 Jul 2024,483.0,,,,,35.0,400.0,,483.0,,,56.0,,,,5253000.0
+Rika Rusman,62.0,8119772084.0,rika.rr@gmail.com,,,,,,,,,,,Active Member,30/07/24 15:27,Web,Active,102,0,1,32,0,1,1,137,30 Jul 2024,483.0,4.0,,,45.0,,360.0,,483.0,,,11.0,,,,257500.0
+rachel lie,62.0,81110076622.0,racheljoannelie.sli@gmail.com,05 Jul 2003,Female,,,,,,,,Size 37,Active Member,30/07/24 14:31,Web,Active,41,1,1,3,0,0,0,46,30 Jul 2024,483.0,3.0,,,60.0,,,,483.0,,,10.0,,,,1843700.0
+Nindita Larasati,62.0,811842598.0,ditalksy@gmail.com,25 May 1998,Female,,,,,,,,Size 37,Active Member,30/07/24 13:46,Web,Active,87,1,3,36,0,1,0,128,30 Jul 2024,483.0,2.0,,,18.0,,302.0,,483.0,,,11.0,,,,618000.0
+Gabriela Moeljoatmodjo,62.0,87800116628.0,gaby.moeljoatmodjo@gmail.com,,Female,,,,,,,,Size 40,Active Member,30/07/24 12:49,Web,Active,59,0,0,9,0,0,0,68,30 Jul 2024,483.0,1.0,,,18.0,,395.0,,483.0,,,20.0,,,,463500.0
+Aditya Novanto,62.0,82123455048.0,a.novanto93@gmail.com,,,,,,,,,,,Active Member,30/07/24 12:34,Web,Active,204,0,3,60,0,0,1,268,30 Jul 2024,483.0,,,,,79.0,360.0,,483.0,,,54.0,,,,4841000.0
+Belinda Tjajadi,62.0,81198888825.0,belindatjajadi@gmail.com,,,,,,,,,,,Active Member,30/07/24 12:25,Web,Active,87,0,0,86,6,0,0,179,30 Jul 2024,483.0,3.0,,,18.0,,,,483.0,,,8.0,,,,309000.0
+ Clarissa Corinna,62.0,8170009018.0,clarissa.nataatmadja@gmail.com,24 Nov 1994,Female,,,,,,,,,Active Member,30/07/24 11:50,Web,Active,66,0,9,8,2,0,0,85,30 Jul 2024,483.0,45.0,,,78.0,,393.0,,483.0,,,4.0,,,,0.0
+ Kinualla Miman,62.0,818904732.0,ulla.miman@gmail.com,22 Oct 1997,,,,,,,,,Size 40,Active Member,30/07/24 11:15,Web,Active,48,0,6,31,1,0,0,86,30 Jul 2024,483.0,6.0,,,6.0,,297.0,,483.0,,,5.0,,,,0.0
+Rahma Madania,62.0,81291214446.0,madaniarahma@gmail.com,05 Dec 1998,Female,,,,,,,,Size 40,Active Member,30/07/24 10:57,Web,Active,44,1,6,28,2,0,0,81,30 Jul 2024,483.0,2.0,,,24.0,,,,483.0,,,2.0,,,,1442000.0
+Carla Elisabeth,62.0,87780453698.0,carlaelisabeths@gmail.com,15 Sep 1998,Female,,,,,,,,Size 42,Active Member,30/07/24 10:48,Web,Active,145,2,6,27,0,0,0,180,30 Jul 2024,483.0,2.0,,,5.0,243.0,303.0,,483.0,,,19.0,,,,4892500.0
+Fellix Guy Kitto,62.0,81263750776.0,gk.fellix@gmail.com,15 Mar 1995,,,,,,,,,Size 46,Active Member,30/07/24 10:20,Web,Active,32,0,8,36,0,0,0,76,30 Jul 2024,483.0,3.0,,,16.0,,395.0,,483.0,,,3.0,,,,257500.0
+Nadia Hudyana,62.0,81285001666.0,nadiave.design@gmail.com,24 Jan 1988,Female,,,,,,,,Size 38,Active Member,30/07/24 09:42,Web,Active,25,3,1,17,0,0,0,46,30 Jul 2024,483.0,7.0,,,59.0,,,,483.0,,,8.0,,,,1586200.0
+ Nadia Makes,62.0,81291811145.0,nadiamakes706@gmail.com,07 Jun 1998,,,,,,,,,Size 38,Active Member,30/07/24 06:23,Web,Active,78,0,2,70,9,0,0,159,29 Jul 2024,484.0,115.0,,,67.0,,358.0,,484.0,,,,,,,1802500.0
+Abimanyu Kadarisman,62.0,85195001559.0,abimanyu_k@hotmail.com,19 May 1995,Male,,,,,,,,Size 44,Active Member,29/07/24 23:13,Web,Active,230,5,11,212,10,2,2,473,29 Jul 2024,484.0,,,,18.0,13.0,304.0,,484.0,,,57.0,,,,6180000.0
+Angie Giovanni,62.0,8111592727.0,angie.giovanni2@gmail.com,27 Jul 1993,Female,,,,,,,,Size 37,Active Member,29/07/24 20:53,Web,Active,27,0,0,3,0,0,0,30,29 Jul 2024,484.0,10.0,,,50.0,,,,484.0,,,6.0,,,,2307200.0
+Maisyarah Johan,62.0,81295165580.0,Maisyarahjohan@gmail.com,,,,,,,,,,Size 38,Active Member,29/07/24 20:36,Web,Active,45,1,2,10,0,0,0,58,29 Jul 2024,484.0,4.0,,,28.0,,,,484.0,,,19.0,,,,3244500.0
+Jesslyn Harijanto,62.0,81910557299.0,jesslynharijanto@gmail.com,12 Dec 1999,,,,,,,,,Size 36,Active Member,29/07/24 20:27,Web,Active,76,0,6,47,0,0,0,129,29 Jul 2024,484.0,,,,57.0,,389.0,,484.0,,,18.0,,,,2266000.0
+Made Ayu,62.0,8112330394.0,madeindriani94@gmail.com,,,,,,,,,,Size 40,Active Member,29/07/24 17:15,Web,Active,104,0,10,27,7,0,0,148,29 Jul 2024,484.0,1.0,,,13.0,,446.0,,484.0,,,17.0,,,,515000.0
+Randy ,,81224424542.0,r.prasidha@yahoo.com,,,,,,,,,,,Active Member,26/07/24 10:18,App,Active,76,1,0,27,0,0,0,104,26 Jul 2024,487.0,14.0,,,59.0,,,,487.0,,,14.0,,,,1586200.0
+,62.0,8111747788.0,elvirakwijaya@gmail.com,,,,,,,,,,,Active Member,17/07/24 13:42,Web,Active,41,0,5,12,2,0,0,60,17 Jul 2024,496.0,2.0,,,4.0,,304.0,,496.0,,,9.0,,,,927000.0
+Surya Mallarangeng,62.0,81311330973.0,surya.mallarangeng@gmail.com,11 Oct 2003,,,,,,,,,,Active Member,20/06/24 19:20,App,Active,45,1,5,26,2,1,0,80,20 Jun 2024,523.0,2.0,,,18.0,136.0,358.0,,523.0,,,10.0,,,,721000.0
+Jeje .,62.0,81297888363.0,jesseniasalim@gmail.com,05 Oct 1996,,,,,,,,,,Active Member,30/12/24 07:50,Web,Active,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,
+Grace Adoe,62.0,8111727007.0,jgrace.adoe@gmail.com,17 Sep 1987,,,,,,,,,Size 41,Active Member,28/12/24 13:24,Web,Active,59,0,14,22,0,0,2,97,,,,,,,,,,,,,,,,,
+ Ignes Dea,62.0,85718558899.0,ignesdea@gmail.com,01 Jul 2019,,,,,,,,,Size 40,Active Member,27/12/24 08:12,BusinessPortal,Active,121,3,6,25,2,0,0,157,,,,,,,,,,,,,,,,,
+Aria Nissa E,62.0,817109306.0,edelianaa@gmail.com,,,,,,,,,,,Active Member,19/12/24 06:43,BusinessPortal,Active,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,
+Rora Syaifrin,62.0,85161610810.0,syaifrinaurora@gmail.com,08 Oct 2001,Female,Jl. H. Abu no.25,,South Jakarta,DKI Jakarta,,ID,,,Active Member,15/12/24 04:17,Web,Active,0,0,0,4,1,0,0,5,,,,,,,,,,,,,,,,,
+Firmansjah Muhammad,62.0,81299072178.0,firmansjahmuhammad287@gmail.com,15 Oct 2000,Male,,,,,,,,,Active Member,09/12/24 00:07,Web,Active,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,
+Samara Sastrosatomo,62.0,8174890252.0,samarasastro@gmail.com,12 Jun 2002,Female,,,,,,,,,Active Member,02/12/24 13:43,Web,Active,4,0,0,0,0,0,0,4,,,,,,,,,,,,,,,,,
+Gana RP,62.0,82221351998.0,ganrp@hotmail.com,,,,,,,,,,,Active Member,28/11/24 09:59,Web,Active,1,0,0,1,0,0,0,2,,,,,,,,,,,,,,,,,
+Gigi Genero,62.0,8119941223.0,gigigenero@gmail.com,23 Dec 1995,,,,,,,,,,Active Member,26/11/24 20:53,Web,Active,3,0,0,1,0,0,0,4,,,,,,,,,,,,,,,,,
+Beata Ayu,62.0,8121802201.0,primanabeata@gmail.com,20 Jul 1994,Female,Jl. Terusan Hang Lekir,,,,,ID,,Size 37,Active Member,25/11/24 09:46,BusinessPortal,Active,16,0,0,0,0,0,0,16,,,,,,,,,,,,,,,,,
+Chyntia Sumbodo,62.0,85781451763.0,chyndv@gmail.com,11 Jan 2002,Female,,,,,,,,,Active Member,21/11/24 14:28,Web,Active,1,0,0,0,0,0,0,1,,,,,,,,,,,,,,,,,
+Trysa Agustia Arifin,62.0,81319152815.0,trysaagustiaarifin@gmail.com,,,,,,,,,,Size 39,Active Member,19/11/24 19:54,BusinessPortal,Active,36,0,1,29,1,0,0,67,,,,,,,,,,,,,,,,,
+RANI ERWYANTINI ARDYANA,62.0,818425575.0,ranieardyana@gmail.com,07 Apr 1980,Female,,,,,,ID,,,Active Member,13/11/24 14:39,Web,Active,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,
+Rose Pasay,62.0,85174200355.0,rose.bangstudios@gmail.com,20 Mar 1993,Female,,,,,,,,Size 38,Active Member,06/11/24 12:35,Web,Active,0,0,0,5,0,0,0,5,,,,,,,,,,,,,,,,,
+Ike Sutjipto,62.0,8112721000.0,ike.sutjipto@gmail.com,02 Dec 1986,,,,,,,,,,Active Member,06/11/24 10:47,Web,Active,3,0,0,0,0,0,0,3,,,,,,,,,,,,,,,,,
+kinski Shabilla,62.0,85925992649.0,kins27billa@gmail.com,27 Jun 1998,,,,,,,,,,Active Member,05/11/24 19:54,BusinessPortal,Active,5,0,0,0,0,0,0,5,,,,,,,,,,,,,,,,,
+Radinda Dyah Utari,62.0,8990085357.0,Radinda.dyahutari@gmail.com,,,,,,,,,,,Active Member,05/11/24 19:51,BusinessPortal,Active,1,0,0,0,0,0,0,1,,,,,,,,,,,,,,,,,
+Chelza .,62.0,81387666223.0,oudriannac@gmail.com,,,,,,,,,,Size 37,Active Member,04/11/24 10:27,Web,Active,74,0,1,25,5,0,0,105,,,,,,,,,,,,,,,,,
+Tri Wulandari,62.0,811709799.0,wulandari1995.tw@gmail.com,,,,,,,,,,Size 37,Active Member,04/11/24 10:22,Web,Active,75,0,1,25,5,0,0,106,,,,,,,,,,,,,,,,,
+Shielda Fahreisa Ranie,62.0,81221083040.0,shieldafahreisa@gmail.com,19 Oct 1994,Female,,,,,,ID,,,Active Member,02/11/24 12:00,BusinessPortal,Active,18,0,7,9,0,0,0,34,,,,,,,,,,,,,,,,,
+ Jennifer Veronika,62.0,81510332295.0,jennifer_veronika@hotmail.com,31 Jan 1995,,,,,,,,,,Active Member,28/10/24 07:30,Web,Active,5,0,0,1,0,0,0,6,,,,,,,,,,,,,,,,,

@@ -1,0 +1,15 @@
+customerId,name,profileImageUrl,joinedOn,membership,telephone,email,isEmailVerified,status,suspendReason,totalSpendedAmount,totalBooking,totalAttendedClass,parentUserId,isChild
+cb2b6d8a-ce20-4e0a-a9cc-fa30c1c20c77,Lingkan S,,2024-08-20T07:58:09+00:00,Active Member,+62 81287561090,lsngantung@gmail.com,false,Active,,1545000.00,11,11,,false
+bd2d3948-faa1-47a5-97e6-b420a590679a,Lucky Suryadi,,2024-08-06T16:07:07+00:00,Active Member,+62 87886678158,Luckysuryadi@gmail.com,false,Active,,11921220.00,63,62,,false
+e6030f54-c0cf-483c-9b78-db7bf829dde2,Guntur Mallarangeng,,2024-08-02T09:19:32+00:00,Active Member,+62 8111888764,gunturmallarangeng@gmail.com,false,Active,,15656000.00,93,76,,false
+5e720436-07a1-4117-a252-e1aef340c820, Elvira Wijaya,,2024-07-17T06:42:48+00:00,Active Member,+62 8111747788,elvirakwijaya@gmail.com,false,Active,,1339000.00,48,41,,false
+c2f908c1-73a7-414d-a25d-148204a0613d,Randy,,2024-07-26T03:18:27+00:00,Active Member,,r.prasidha@yahoo.com,true,Active,,13160825.00,77,76,,false
+6556cbe7-cf2b-43ff-8305-64950c2a4d98,Wanti Kadarisma,,2025-11-14T11:11:00+00:00,Active Member,+62 87713111970,wantikadarisman@rocketmail.com,false,Active,,515000.00,2,2,,false
+79180e2e-381f-43d3-b03a-bd6898706a67,Lucy Ham,,2025-08-18T12:38:27+00:00,Active Member,+62 8118942775,glitterhg@gmail.com,false,Active,,1751000.00,9,7,,false
+7c9007d4-a562-450c-9cda-83d2943c2702,Helena S,,2024-08-20T07:52:27+00:00,Active Member,+62 8119187117,helenafelicea@yahoo.com,false,Active,,23952650.00,192,174,,false
+85439056-3dd0-4a5a-a5cd-79cfcda270f6,Jonathan Edward,,2024-09-08T02:26:49+00:00,Active Member,+62 87878461661,jonathanedwardtobing98@gmail.com,false,Active,,515000.00,2,2,,false
+51f573d4-ecaf-4555-b6c2-d762a67d234a, Jo Reiner Wijaja,,2025-08-28T11:38:39+00:00,Active Member,+62 87880190088,jo.reinerw@gmail.com,false,Active,,257500.00,0,0,,false
+b94945a8-1f2c-498d-bec2-b4035f11193e,Tri Wulandari,,2024-11-04T03:22:27+00:00,Active Member,+62 811709799,wulandari1995.tw@gmail.com,true,Active,,17947750.00,81,75,,false
+09b526d3-c800-4109-a4cb-b5b14c8da24d,Sebastien F.,,2025-02-11T00:53:07+00:00,Active Member,+62 8117704266,sebjkt@gmail.com,false,Active,,2157850.00,29,28,,false
+a0bfbebb-198c-4338-ac56-468a97efd596,Angie Giovanni,,2024-07-29T13:53:55+00:00,Active Member,+62 8111592727,angie.giovanni2@gmail.com,false,Active,,6651225.00,27,27,,false
+abfa0b75-5748-42aa-9238-ed07f347f609,Keona Setiawan,,2025-07-25T03:27:23+00:00,Active Member,+62 8111377417,keona.fs@gmail.com,false,Active,,257500.00,0,0,,false

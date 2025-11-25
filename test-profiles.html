@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Customer Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-button {
+            background: #ff6b35;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .test-button:hover {
+            background: #e55a2b;
+        }
+        .result {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #ff6b35;
+        }
+        .error {
+            border-left-color: #dc3545;
+            color: #dc3545;
+        }
+        .success {
+            border-left-color: #28a745;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer Profiles Test</h1>
+
+    <div class="test-section">
+        <h2>CSV Data Test</h2>
+        <button class="test-button" onclick="testFetch()">Test CSV Fetch</button>
+        <button class="test-button" onclick="testDownload()">Test Download</button>
+        <div id="testResult"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Download Buttons Test</h2>
+        <button class="test-button" onclick="testCSVDownload()">Test CSV Download</button>
+        <button class="test-button" onclick="testExcelDownload()">Test Excel Download</button>
+        <div id="downloadResult"></div>
+    </div>
+
+    <script>
+        // Test CSV fetch
+        async function testFetch() {
+            const resultDiv = document.getElementById('testResult');
+            resultDiv.innerHTML = '<div class="result">Testing CSV fetch from simplified_customer_profiles.csv...</div>';
+
+            try {
+                console.log('Testing fetch from: simplified_customer_profiles.csv');
+
+                const response = await fetch('simplified_customer_profiles.csv');
+                console.log('Response status:', response.status);
+                console.log('Response ok:', response.ok);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status} - ${response.statusText}`);
+                }
+
+                const csvText = await response.text();
+                console.log('CSV text length:', csvText.length);
+                console.log('CSV first 100 chars:', csvText.substring(0, 100));
+
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <strong>✅ Success!</strong><br>
+                        CSV file loaded successfully<br>
+                        Path: simplified_customer_profiles.csv<br>
+                        Status: ${response.status} ${response.statusText}<br>
+                        Size: ${csvText.length} characters<br>
+                        Lines: ${csvText.split('\n').length} lines
+                    </div>
+                `;
+
+                // Store for download tests
+                localStorage.setItem('testCSVData', csvText);
+
+            } catch (error) {
+                console.error('Fetch error:', error);
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <strong>❌ Error:</strong> ${error.message}<br>
+                        <small>Check browser console for more details</small>
+                    </div>
+                `;
+            }
+        }
+
+        // Test basic download
+        function testDownload() {
+            const resultDiv = document.getElementById('testResult');
+
+            try {
+                const csvData = localStorage.getItem('testCSVData');
+
+                if (!csvData) {
+                    throw new Error('No CSV data found. Please test CSV fetch first.');
+                }
+
+                const blob = new Blob([csvData], { type: 'text/csv;charset=utf-8;' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'test_customer_profiles.csv';
+                a.click();
+                URL.revokeObjectURL(url);
+
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <strong>✅ Download started!</strong><br>
+                        File: test_customer_profiles.csv
+                    </div>
+                `;
+
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <strong>❌ Download Error:</strong> ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        // Test CSV download with proper function
+        async function testCSVDownload() {
+            const resultDiv = document.getElementById('downloadResult');
+            resultDiv.innerHTML = '<div class="result">Testing CSV download...</div>';
+
+            try {
+                console.log('Testing CSV download from: simplified_customer_profiles.csv');
+
+                const response = await fetch('simplified_customer_profiles.csv');
+                console.log('Download response status:', response.status);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status} - ${response.statusText}`);
+                }
+
+                const csvText = await response.text();
+
+                const blob = new Blob([csvText], { type: 'text/csv;charset=utf-8;' });
+                const link = document.createElement('a');
+                const url = URL.createObjectURL(blob);
+                link.setAttribute('href', url);
+                link.setAttribute('download', 'customer_profiles_' + new Date().toISOString().split('T')[0] + '.csv');
+                link.style.visibility = 'hidden';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <strong>✅ CSV Download Started!</strong><br>
+                        File: customer_profiles_${new Date().toISOString().split('T')[0]}.csv<br>
+                        Path: simplified_customer_profiles.csv<br>
+                        Status: ${response.status}
+                    </div>
+                `;
+
+            } catch (error) {
+                console.error('CSV Download error:', error);
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <strong>❌ CSV Download Error:</strong> ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        // Test Excel download
+        async function testExcelDownload() {
+            const resultDiv = document.getElementById('downloadResult');
+            resultDiv.innerHTML = '<div class="result">Testing Excel download...</div>';
+
+            try {
+                console.log('Testing Excel download from: simplified_customer_profiles.csv');
+
+                const response = await fetch('simplified_customer_profiles.csv');
+                console.log('Excel download response status:', response.status);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status} - ${response.statusText}`);
+                }
+
+                const csvText = await response.text();
+
+                // Create Excel-compatible format
+                const bom = '\uFEFF';
+                const excelContent = bom + csvText;
+
+                const blob = new Blob([excelContent], {
+                    type: 'application/vnd.ms-excel;charset=utf-8;'
+                });
+                const link = document.createElement('a');
+                const url = URL.createObjectURL(blob);
+                link.setAttribute('href', url);
+                link.setAttribute('download', 'customer_profiles_' + new Date().toISOString().split('T')[0] + '.xls');
+                link.style.visibility = 'hidden';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                resultDiv.innerHTML = `
+                    <div class="result success">
+                        <strong>✅ Excel Download Started!</strong><br>
+                        File: customer_profiles_${new Date().toISOString().split('T')[0]}.xls<br>
+                        Path: simplified_customer_profiles.csv<br>
+                        Status: ${response.status}
+                    </div>
+                `;
+
+            } catch (error) {
+                console.error('Excel Download error:', error);
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <strong>❌ Excel Download Error:</strong> ${error.message}
+                    </div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
